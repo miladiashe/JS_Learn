@@ -15,9 +15,14 @@ const calculator = {
         return a**b;
     },
 
+    times : function(a, b){
+        return a*b
+    }
+
 }
 
-calculator.add(97, 22);
-calculator.divide(21, 3);
-calculator.minus(50, 48);
-calculator.powerOf(2, 2);
+const plusResult = calculator.add(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const timesResult = calculator.powerOf(10, minusResult);
+const divResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.powerOf(divResult, minusResult);
