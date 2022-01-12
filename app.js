@@ -1,13 +1,19 @@
-const a = 5;
-const b = 2;
-let myName = "kala";
+const calculator = {
+    add : function(a, b){
+        console.log(a+b);
+    },
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
+    minus : function(a, b){
+        console.log(a-b);
+    },
 
-console.log("안녕 "+myName);
+    divide : function(a, b){
+        console.log(a/b);
+    },
 
-myName = "Miladiashe";
+    powerOf : function(a, b){
+        console.log(a**b);
+    },
 
-console.log("안녕안녕 "+myName);
+}
+
