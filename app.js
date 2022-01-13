@@ -1,10 +1,11 @@
 const title = document.querySelector(".title h1");
 
 function handleTitleClick() {
-    if (title.className === "active"){
-        title.className = ""
+    const clickedClass = "clicked"
+    if (title.classList.contains(clickedClass)){
+        title.classList.remove(clickedClass)
     }else{
-        title.className = "active"
+        title.classList.add(clickedClass)
     }
 }
 
