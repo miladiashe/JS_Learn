@@ -1,15 +1,11 @@
 const title = document.querySelector(".title h1");
 
 function handleTitleClick() {
-    const currentColor = title.style.color
-    let newColor
-    if (currentColor === "blue") {
-        newColor = "pink"
+    if (title.className === "active"){
+        title.className = ""
     }else{
-        newColor = "blue"
+        title.className = "active"
     }
-    title.style.color = newColor
-
 }
 
 title.onclick = handleTitleClick
