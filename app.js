@@ -1,3 +1,3 @@
-const title = document.getElementById("title");
+const titles = document.getElementsByClassName("title");
 
-console.dir(title)
+titles.innerText = ("Love You!")
