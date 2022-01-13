@@ -1,3 +1,2 @@
-const titles = document.getElementsByClassName("title");
+const title = document.querySelector(".hello h1");
 
-titles.innerText = ("Love You!")
