@@ -1,3 +1,8 @@
 const clock = document.querySelector("#clock");
 
-clock.innerText = "말랑";
+function getClock() {
+    const date = new Date();
+    console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`)
+}
+
+setInterval(getClock, 1000);
