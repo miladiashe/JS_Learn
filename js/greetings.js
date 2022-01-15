@@ -10,7 +10,7 @@ function onLoginSubmit(event) {
     const userName = loginInput.value;
     localStorage.setItem(USERNAME_KEY, userName);
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    paintGreetings(username);
+    paintGreetings(userName);
 }
 
 function paintGreetings(username) {
